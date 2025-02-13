@@ -22,9 +22,10 @@
             text-align: center;
         }
         .perfil-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: flex; /* Flexbox para alinhar as divs lado a lado */
+            justify-content: center; /* Centraliza as divs */
+            white-space: nowrap; /* Impede que os elementos quebrem para a próxima linha */
+            overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se necessário */
         }
         .perfil {
             background: white;
@@ -34,6 +35,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 250px;
+            flex: 0 0 auto; /* Impede que os elementos encolham ou crescam */
         }
         .foto {
             width: 100px;
@@ -65,7 +67,7 @@
             bottom: 0;
             width: 100%;
         }
-    </style>
+    </style>  
 </head>
 <body>
 
@@ -93,10 +95,10 @@
         <!--Daniel-->
         <div class="perfil-container">
             <div class="perfil">
-                <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
-                <h3>Nome do Aluno</h3>
-                <p>Curso: [Nome do Curso]</p>
-                <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
+                <img class="foto" src="WIN_20250213_11_21_31_Pro.jpg" alt="Foto do Aluno">
+                <h3>Daniel Liberato</h3>
+                <p>Curso: DEV</p>
+                <p><a href="https://github.com/Liberatinho" target="_blank">GitHub</a></p>
             </div>
         </div>
         <!--Murilo-->
